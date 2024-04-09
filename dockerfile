@@ -1,4 +1,4 @@
-FROM openjdk:8-jdk-alpine 
+FROM openjdk:17-oracle
 VOLUME /tmp 
 COPY target/PhotoAppApiAlbums-0.0.1-SNAPSHOT.jar PhotoAppApiAlbums.jar 
 ENTRYPOINT ["java","-jar","PhotoAppApiAlbums.jar"]
